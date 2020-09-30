@@ -22,6 +22,14 @@ public class JobProcessor implements PageProcessor {
 
     private static String SPIDER_URL;
 
+    private String year;
+    public JobProcessor(String year) {
+        this.year = year;
+    }
+
+    public JobProcessor() {
+    }
+
     /**
      * 解析页面
      * @param page 页面
